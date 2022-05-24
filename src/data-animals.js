@@ -1,0 +1,264 @@
+import cat from "./images/cartoon-cat.png";
+import dog from "./images/cartoon-dog.png";
+import pig from "./images/cartoon-pig.png";
+import horse from "./images/cartoon-horse.png";
+import mouse from "./images/cartoon-mouse.png";
+import duck from "./images/cartoon-duck-1.png";
+import frog from "./images/cartoon-frog-1.png";
+import cockerel from "./images/cartoon-cockerel.png";
+import bee from "./images/cartoon-bee.png";
+import bird from "./images/cartoon-bird.png";
+
+const animals = [
+  {
+    id: 0,
+    type: "house cat",
+    img: cat,
+    nickname: "Kitty",
+    sounds: {
+      English: "Meow",
+      Spanish: "Miau",
+      German: "Miau",
+      Polish: "Miauk",
+      Estonian: "Näu",
+      Vietnamese: "Meo",
+      Japanese: "Nyan",
+      Korean: "Yaong",
+    },
+    availableLanguages: [
+      "English",
+      "Spanish",
+      "German",
+      "Polish",
+      "Estonian",
+      "Vietnamese",
+      "Japanese",
+      "Korean",
+    ],
+  },
+  {
+    id: 1,
+    type: "dog",
+    img: dog,
+    nickname: "Doggy",
+    sounds: {
+      English: "Woff",
+      Spanish: "Guau",
+      French: "Waouh",
+      Italian: "Bau",
+      German: "Wau",
+      Dutch: "Blaf",
+      Icelandic: "Voff",
+      Turkish: "Hev",
+      Urdu: "جھنجھلاہٹ",
+      Japanese: "Wan",
+      Chinese: "Wang", //Cantonese
+    },
+    availableLanguages: [
+      "English",
+      "Spanish",
+      "French",
+      "Italian",
+      "German",
+      "Dutch",
+      "Icelandic",
+      "Turkish",
+      "Urdu",
+      "Japanese",
+      "Chinese",
+    ],
+  },
+  {
+    id: 2,
+    type: "pig",
+    img: pig,
+    nickname: "Piggy",
+    sounds: {
+      English: "Oink",
+      German: "Grunz",
+      Dutch: "Knor",
+      Swedish: "Nöff",
+      Albanian: "Hunk",
+      Japanese: "Buu",
+    },
+    availableLanguages: [
+      "English",
+      "German",
+      "Dutch",
+      "Swedish",
+      "Albanian",
+      "Japanese",
+    ],
+  },
+  {
+    id: 3,
+    type: "horse",
+    img: horse,
+    nickname: "Horsy",
+
+    sounds: {
+      English: "Neigh",
+      Danish: "Vrinsk",
+      Swedish: "Gnägg",
+      Polish: "I-haaa",
+      Hungarian: "Nyihaha",
+      Russian: "I-go-go",
+      Japanese: "Hihiin",
+    },
+    availableLanguages: [
+      "English",
+      "Danish",
+      "Swedish",
+      "Polish",
+      "Hungarian",
+      "Russian",
+      "Japanese",
+    ],
+  },
+  {
+    id: 4,
+    type: "mouse",
+    img: mouse,
+    nickname: "Mousie",
+    sounds: {
+      English: "Squeak",
+      Italian: "Squitt",
+      Dutch: "Piep",
+      Swedish: "Pip-pip",
+      Hungarian: "Cin",
+      Japanese: "Chuu",
+      Korean: "Jjik",
+      Chinese: "Zi", //Mandarin
+    },
+    availableLanguages: [
+      "English",
+      "Italian",
+      "Dutch",
+      "Swedish",
+      "Hungarian",
+      "Japanese",
+      "Korean",
+      "Chinese",
+    ],
+  },
+  {
+    id: 5,
+    type: "duck",
+    img: duck,
+    nickname: "Duckling",
+    sounds: {
+      English: "Quack",
+      French: "Coin",
+      Danish: "Rap",
+      Hungarian: "Hap",
+      Romanian: "Mac",
+      Estonian: "Prääks",
+      Turkish: "Vak",
+    },
+    availableLanguages: [
+      "English",
+      "French",
+      "Danish",
+      "Hungarian",
+      "Romanian",
+      "Estonian",
+      "Turkish",
+    ],
+  },
+  {
+    id: 6,
+    type: "frog",
+    img: frog,
+    nickname: "Froggy",
+    sounds: {
+      English: "Ribbit",
+      Italian: "Cra Cra",
+      German: "Quak",
+      Hungarian: "Brekeke",
+      Turkish: "Vrak",
+      Polish: "Kum Kum",
+      Thai: "Op Op",
+      Japanese: "Kerokero",
+      Korean: "Gae-Gool",
+      Chinese: "Guo Guo",
+    },
+    availableLanguages: [
+      "English",
+      "Italian",
+      "German",
+      "Hungarian",
+      "Turkish",
+      "Polish",
+      "Thai",
+      "Japanese",
+      "Korean",
+      "Chinese",
+    ],
+  },
+  {
+    id: 7,
+    type: "cockerel",
+    img: cockerel,
+    nickname: "Mr Cockerel",
+    sounds: {
+      English: "Cock-A-Doodle-Doo",
+      French: "Cocorico",
+      Spanish: "Kikiriki",
+      Japanese: "Kok-E-Kok-Ko",
+      Korean: "Ko-Ko-Oh",
+    },
+    availableLanguages: ["English", "French", "Spanish", "Japanese", "Korean"],
+  },
+  {
+    id: 8,
+    type: "bee",
+    img: bee,
+    nickname: "Little Bee",
+    sounds: {
+      English: "Bzzz",
+      German: "Sum",
+      Turkish: "Vzzz",
+      Japanese: "Bun",
+      Korean: "Boong",
+    },
+    availableLanguages: ["English", "German", "Turkish", "Japanese", "Korean"],
+  },
+  {
+    id: 9,
+    type: "bird",
+    img: bird,
+    nickname: "Birdie",
+    sounds: {
+      English: "Tweet",
+      French: "Cui cui",
+      Spanish: "Pio Pio",
+      Italian: "Chip",
+      Dutch: "Tjiep",
+      Swedish: "Pip Pip",
+      Greek: "Tsiou-Tsiou",
+      Turkish: "Jick-Jick",
+      Japanese: "Chun-Chun",
+    },
+    availableLanguages: [
+      "English",
+      "French",
+      "Spanish",
+      "Italian",
+      "Dutch",
+      "Swedish",
+      "Greek",
+      "Turkish",
+      "Japanese",
+    ],
+  },
+];
+
+const getAnimals = function () {
+  return animals;
+};
+
+const getAnimal = function (id) {
+  return animals.find((animal) => animal.id === id);
+};
+
+export { getAnimals, getAnimal };
