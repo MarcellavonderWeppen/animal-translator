@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { getAnimal } from "./data-animals";
 import speechBubble from "./images/speech-bubble.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import cat2 from "./images/cartoon-cat-light.png";
+import dog2 from "./images/cartoon-dog-light.png";
 
 function Intro() {
   const cat = getAnimal(0);
@@ -9,7 +11,7 @@ function Intro() {
   const pig = getAnimal(2);
 
   const [talking, setTalking] = useState(false);
-  const [dogTalking, setDogTalking] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(true);
 
   setInterval(() => {
     if (talking === false) {
@@ -19,8 +21,12 @@ function Intro() {
     }
   }, 3000);
 
+  const handleBulb = function () {
+    setDarkTheme(!darkTheme);
+  };
+
   return (
-    <div className="main-container dark-theme">
+    <div className={darkTheme ? "main-container dark-theme" : "main-container"}>
       <div className="main-container intro">
         <h3>Psst...</h3>
         <h1>... hey there, Animal Lover!</h1>
@@ -45,7 +51,11 @@ function Intro() {
         </ul>
         <div className="intro-animal-container">
           <div className="intro-animal-box">
-            <img src={cat.img} alt="cat" className="intro-animal-img" />
+            <img
+              src={darkTheme ? cat2 : cat.img}
+              alt="cat"
+              className="intro-animal-img"
+            />
             <div
               className={
                 talking
@@ -62,7 +72,11 @@ function Intro() {
             </div>
           </div>
           <div className="intro-animal-box">
-            <img src={dog.img} alt="cat" className="intro-animal-img" />
+            <img
+              src={darkTheme ? dog2 : dog.img}
+              alt="cat"
+              className="intro-animal-img"
+            />
             <div
               className={
                 talking
@@ -85,7 +99,7 @@ function Intro() {
         <ul>
           <li>
             Let us explain the cause of your struggles: You have been to the
-            Netherlands and the dogs <b>Blaf Blaf</b> is just dutch for{" "}
+            Netherlands and the dogs <b>Blaf Blaf</b> is just Dutch for{" "}
             <b>Woff Woff</b> ! All the dog wanted to do, is happily greet you.
             But you didn't understand, because you lacked the cultural
             animal-competence.
@@ -144,6 +158,9 @@ function Intro() {
           </button>
         </div>
       </div>
+      <button className="light-dark" onClick={handleBulb}>
+        💡
+      </button>
     </div>
   );
 }

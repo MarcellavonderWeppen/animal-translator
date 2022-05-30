@@ -1,7 +1,7 @@
 function Disclaimer() {
   return (
-    <div>
-      <div class="website-info info-box">
+    <div style={{ alignSelf: "flex-end", marginRight: "5em" }}>
+      <div className="website-info info-box">
         <p>
           Find more inspiration about animal sounds around the world on
           <a href="https://www.boredpanda.com/animal-sounds-different-languages-james-chapman/">
@@ -10,7 +10,7 @@ function Disclaimer() {
         </p>
       </div>
 
-      <div class="flat-icon-info info-box">
+      <div className="flat-icon-info info-box">
         <div>
           <p>
             Icons made by{" "}

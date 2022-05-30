@@ -1,8 +1,17 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 function No() {
+  const [darkTheme, setDarkTheme] = useState(true);
+  const handleBulb = function () {
+    setDarkTheme(!darkTheme);
+  };
   return (
-    <div className="main-container no dark-theme">
+    <div
+      className={
+        darkTheme ? "main-container no dark-theme " : "main-container no"
+      }
+    >
       <h1>Really...?</h1>
       <h2>
         It's ok. We can deal with the emotional pain. No big deal. We will get
@@ -16,6 +25,9 @@ function No() {
 
       <button className="intro-button talk-button">
         <NavLink to="../app">Ok, ok, I changed my mind</NavLink>
+      </button>
+      <button className="light-dark" onClick={handleBulb}>
+        💡
       </button>
     </div>
   );

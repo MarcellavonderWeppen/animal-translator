@@ -14,7 +14,7 @@ const LanguageChooser = ({ animals, index, setIndex }) => {
   };
 
   return (
-    <div>
+    <div style={{ marginBottom: "20vh" }}>
       <button id="button" onClick={handleClick} className="menu-button">
         Select a language
         <i className="fa fa-caret-down"></i>
