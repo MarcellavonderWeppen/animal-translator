@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { getAnimal } from "./data-animals";
-import speechBubble from "./images/speech-bubble.png";
+import { getAnimal } from "../data/data-animals";
+import speechBubble from "../images/speech-bubble.png";
 import { useState } from "react";
-import cat2 from "./images/cartoon-cat-light.png";
-import dog2 from "./images/cartoon-dog-light.png";
+import cat2 from "../images/cartoon-cat-light.png";
+import dog2 from "../images/cartoon-dog-light.png";
 
 function Intro() {
   const cat = getAnimal(0);

@@ -1,15 +1,15 @@
 // implement window.scrollTo(0, 0)
 
-import "./App.css";
+import "../App.css";
 import React, { useState } from "react";
-import { getAnimals } from "./data-animals.js";
+import { getAnimals } from "../data/data-animals.js";
 
-import Header from "./components/header";
-import Carousel from "./components/carousel";
-import LanguageChooser from "./components/languageChooser";
-import Disclaimer from "./components/Disclaimer";
+import Header from "../components/header";
+import Carousel from "../components/carousel";
+import LanguageChooser from "../components/languageChooser";
+import Disclaimer from "../components/Disclaimer";
 
-import LanguageContext from "./contexts/LanguageContext";
+import LanguageContext from "../contexts/LanguageContext";
 
 function App() {
   const [language, setLanguage] = useState("English");

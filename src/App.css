@@ -1,4 +1,18 @@
 body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
   min-height: 100vh;
   background-color: #ffe9fa;
 }
@@ -49,13 +63,10 @@ body {
   font-size: 1.8em;
 }
 
-.main-container.no {
-}
-
 /*** INTRO & OUTRO("no") ***/
 
 .intro.main-container {
-  padding-bottom: 20vw;
+  padding-bottom: 20vh;
 }
 
 .intro ul,
@@ -81,7 +92,6 @@ body {
 
 .intro-animal-box {
   display: flex;
-  width: inherit;
   width: 50%;
   padding: 1em;
   align-items: flex-start;

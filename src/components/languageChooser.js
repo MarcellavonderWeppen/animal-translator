@@ -1,16 +1,14 @@
 import React, { useState, useContext } from "react";
 import LanguageContext from "../contexts/LanguageContext";
-import getFlag from "../data-flags";
+import getFlag from "../data/data-flags";
 
 const LanguageChooser = ({ animals, index, setIndex }) => {
   const [displayMenu, setDisplayMenu] = useState(false);
 
-  const [language, setLanguage] = useContext(LanguageContext); // KEEP language; Deleting it will cause bug
+  const [language, setLanguage] = useContext(LanguageContext); // KEEP language; Deleting it will cause bug (menu will not work anymore)
 
   const handleClick = function () {
     setDisplayMenu(!displayMenu);
-    /*     console.log(animals[index].availableLanguages.length);
-     */
   };
 
   return (

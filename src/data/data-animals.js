@@ -1,13 +1,13 @@
-import cat from "./images/cartoon-cat.png";
-import dog from "./images/cartoon-dog.png";
-import pig from "./images/cartoon-pig.png";
-import horse from "./images/cartoon-horse.png";
-import mouse from "./images/cartoon-mouse.png";
-import duck from "./images/cartoon-duck-1.png";
-import frog from "./images/cartoon-frog-1.png";
-import cockerel from "./images/cartoon-cockerel.png";
-import bee from "./images/cartoon-bee.png";
-import bird from "./images/cartoon-bird.png";
+import cat from "../images/cartoon-cat.png";
+import dog from "../images/cartoon-dog.png";
+import pig from "../images/cartoon-pig.png";
+import horse from "../images/cartoon-horse.png";
+import mouse from "../images/cartoon-mouse.png";
+import duck from "../images/cartoon-duck-1.png";
+import frog from "../images/cartoon-frog-1.png";
+import cockerel from "../images/cartoon-cockerel.png";
+import bee from "../images/cartoon-bee.png";
+import bird from "../images/cartoon-bird.png";
 
 const animals = [
   {
