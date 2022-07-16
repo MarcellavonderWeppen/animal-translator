@@ -1,4 +1,4 @@
-# Animal-Translator
+# :cat: Animal-Translator
 
 ## A project about intercultural animal-competence, build in React
 
