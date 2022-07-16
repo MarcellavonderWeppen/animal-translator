@@ -25,20 +25,20 @@ function Carousel({ animals, index, setIndex }) {
   };
 
   const handleMouseEnter = function (e, animal) {
-    console.log(e.target.alt);
+    //console.log(e.target.alt);
     if (e.target.alt === "duck") {
-      alert("Don't touch the duck! It might get scared and attack.");
+      alert(`Don't touch Ms. Duckling! She might get scared and attack.`);
     }
     if (e.target.alt === "frog") {
       alert(
-        "We advise not to touch the frog. Frogs are usually a bit slimy. Also, we are not sure, if they really like it."
+        `We advise not to touch Mr. Froggy. Frogs are usually a bit slimy. Also, we are not sure, if they really like it.`
       );
     }
     if (e.target.alt === "cockerel") {
-      alert("Don't touch the cockerel! It might get scared and attack.");
+      alert(`Don't touch Mr. Cockerel! He might get scared and attack.`);
     }
     if (e.target.alt === "bee") {
-      alert("Don't touch the bee! It might get scared and sting.");
+      alert(`Don't touch Little Bee! She might get scared and sting.`);
     }
     setTouch(true);
   };
@@ -70,6 +70,7 @@ function Carousel({ animals, index, setIndex }) {
                 <img
                   src={animal.img}
                   alt={animal.type}
+                  id={animal.id} // just a feeling, that this might come in handy
                   className="animal-img"
                   onMouseEnter={handleMouseEnter}
                   onMouseOut={handleMouseOut}

@@ -50,7 +50,6 @@ const animals = [
       Dutch: "Blaf",
       Icelandic: "Voff",
       Turkish: "Hev",
-      Urdu: "جھنجھلاہٹ",
       Japanese: "Wan",
       Chinese: "Wang", //Cantonese
     },
@@ -63,7 +62,6 @@ const animals = [
       "Dutch",
       "Icelandic",
       "Turkish",
-      "Urdu",
       "Japanese",
       "Chinese",
     ],

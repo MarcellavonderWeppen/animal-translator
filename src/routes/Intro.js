@@ -34,18 +34,18 @@ function Intro() {
         <h4> May we ask you...</h4>
         <ul>
           <li>
-            Have you ever been walking down a street, when suddenly a dog came
-            running towards you yapping <b>Blaf Blaf</b> ? You have been
-            confused, not knowing what to do?
+            Have you ever walked down a street, when suddenly a dog came running
+            towards you barking <b>Blaf Blaf</b> ? Were you confused and didn't
+            know what to do?
           </li>
           <li>
-            Have you ever been to Sweden, friendly approaching a pig with a warm
-            <b> Oink Oink</b>? But the pig just starred back at you with a
-            vacant expression?
+            Have you ever been to Sweden and approached a pig with a warm
+            <b> Oink Oink</b>? But the pig just stared back at you with a vacant
+            expression?
           </li>
           <li>
-            Or did you ever befriend a German cat? You thought, the two of you
-            clicked and talk the same language (quite literally). But when you
+            Or have you ever befriended a German cat? You thought the two of you
+            clicked and talked the same language (quite literally). But when you
             sent letters to your furry friend, all you got was cold silence?
           </li>
         </ul>
@@ -93,30 +93,28 @@ function Intro() {
             </div>
           </div>
         </div>
-        <h4>
-          If this sounds familiar you need Awesome Animal Translator for sure!
-        </h4>
+        <h4>If this sounds familiar, you need Awesome Animal Translator!</h4>
         <ul>
           <li>
             Let us explain the cause of your struggles: You have been to the
             Netherlands and the dogs <b>Blaf Blaf</b> is just Dutch for{" "}
-            <b>Woff Woff</b> ! All the dog wanted to do, is happily greet you.
-            But you didn't understand, because you lacked the cultural
+            <b>Woof Woof</b> ! All the dog wanted to do, is happily greet you.
+            But you didn't understand, because you lacked the intercultural
             animal-competence.
           </li>
           <li>
             Swedish pigs say <b>Nöff Nöff</b>. The poor animal simply didn't
-            understand, what you've been trying to say. <b>Oink Oink</b> are
-            just some meaningless phrases to it.
+            understand what you were trying to say. <b>Oink Oink</b> are just
+            some meaningless phrases for it.
           </li>
           <li>
-            As for the cat, German cats say <b>Miau</b>. It is exactly
-            pronounced like <b>Meow</b>. That's why you were able to connect
-            with the cat so well, when the two of you were talking. Felines with
-            higher education can probably read English Cat-ish, but your mate
-            was probably a simple country-bred cat. Most working class cats can
-            hardly read and write, let alone in English. You probably bewildered
-            the poor animal, to say the least!
+            As for the cat, German cats say <b>Miau</b>. It is pronounced
+            exactly like <b>Meow</b>. That's why you were able to connect with
+            the cat so well, when the two of you were talking. Felines with
+            higher education can probably read English Cat-ish, but your
+            companion was probably a simple country-bred cat. Most working class
+            cats can hardly read and write, let alone in English. You probably
+            bewildered the poor animal, to say the least!
           </li>
         </ul>
         <div className="intro-animal-container">
@@ -141,8 +139,8 @@ function Intro() {
         <ul>
           <li>
             {" "}
-            All this awkward situations wouldn't have occurred in the first
-            place if you had worked on your cultural animal-competence with
+            All these awkward situations wouldn't have occurred in the first
+            place if you had worked on your intercultural animal-competence with
             Awesome Animal Translator!
           </li>
           <li>It's never too late.</li>

@@ -1,6 +1,5 @@
 // implement window.scrollTo(0, 0)
 
-import "../App.css";
 import React, { useState } from "react";
 import { getAnimals } from "../data/data-animals.js";
 
@@ -12,6 +11,8 @@ import Disclaimer from "../components/Disclaimer";
 import LanguageContext from "../contexts/LanguageContext";
 
 function App() {
+  window.scrollTo(0, 0);
+
   const [language, setLanguage] = useState("English");
   const [index, setIndex] = useState(0);
   const [darkTheme, setDarkTheme] = useState(false);

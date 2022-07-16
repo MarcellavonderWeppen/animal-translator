@@ -3,7 +3,8 @@ function Header() {
     <div>
       <h1>Welcome to Awesome Animal Translator</h1>
       <h2>
-        - gather intercultural animal-competence with this indispensable tool !
+        - gather intercultural animal-understanding with this indispensable tool
+        !
       </h2>
     </div>
   );
