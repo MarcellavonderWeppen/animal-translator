@@ -27,8 +27,8 @@ function Intro() {
 
   return (
     <div className={darkTheme ? "main-container dark-theme" : "main-container"}>
-      <div className="main-container intro">
-        <h3>Psst...</h3>
+      <div className="main-container main-container-intro">
+        <h2>Psst...</h2>
         <h1>... hey there, Animal Lover!</h1>
         <h3>Yes, we are talking to you.</h3>
         <h4> May we ask you...</h4>
@@ -50,10 +50,10 @@ function Intro() {
           </li>
         </ul>
         <div className="intro-animal-container">
-          <div className="intro-animal-box">
+          <div className="intro-animal-box intro-animal-box-cat">
             <img
               src={darkTheme ? cat2 : cat.img}
-              alt="cat"
+              alt="a cute cat meowing"
               className="intro-animal-img"
             />
             <div
@@ -65,7 +65,7 @@ function Intro() {
             >
               <img
                 src={speechBubble}
-                alt="speech-bubble"
+                alt="speech bubble of cat saying meow, but meow is spelled miau"
                 className="intro-speech-bubble"
               />
               <p className="intro-sound">{cat.sounds["German"]} !</p>
@@ -74,7 +74,7 @@ function Intro() {
           <div className="intro-animal-box">
             <img
               src={darkTheme ? dog2 : dog.img}
-              alt="cat"
+              alt="a cute dog saying blav"
               className="intro-animal-img"
             />
             <div
@@ -86,7 +86,7 @@ function Intro() {
             >
               <img
                 src={speechBubble}
-                alt="speech-bubble"
+                alt="speech bubble of dog saying blav"
                 className="intro-speech-bubble"
               />
               <p className="intro-sound">{dog.sounds["Dutch"]} !</p>
@@ -118,8 +118,12 @@ function Intro() {
           </li>
         </ul>
         <div className="intro-animal-container">
-          <div className="intro-animal-box">
-            <img src={pig.img} alt="cat" className="intro-animal-img" />
+          <div className="intro-animal-box pig">
+            <img
+              src={pig.img}
+              alt="a cute pig saying nöff"
+              className="intro-animal-img"
+            />
             <div
               className={
                 talking
@@ -129,7 +133,7 @@ function Intro() {
             >
               <img
                 src={speechBubble}
-                alt="speech bubble"
+                alt="speech bubble of pig saying nöff"
                 className="intro-speech-bubble"
               />
               <p className="intro-sound">{pig.sounds["Swedish"]} !</p>
@@ -156,7 +160,7 @@ function Intro() {
           </button>
         </div>
       </div>
-      <button className="light-dark" onClick={handleBulb}>
+      <button className="light-dark intro-light-dark" onClick={handleBulb}>
         💡
       </button>
     </div>

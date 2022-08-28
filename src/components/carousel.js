@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import speechBubble from "../images/speech-bubble.png";
 import LanguageContext from "../contexts/LanguageContext";
 
@@ -46,8 +47,27 @@ function Carousel({ animals, index, setIndex }) {
     setTouch(false);
   };
 
+  let slideWidth = 40;
+
+  if (window.innerWidth < 1200) {
+    slideWidth = 50;
+  }
+
+  if (window.innerWidth < 900) {
+    slideWidth = 70;
+  }
+
+  if (window.innerWidth < 600) {
+    slideWidth = 95;
+  }
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setIndex(index + 1),
+    onSwipedRight: () => setIndex(index - 1),
+  });
+
   return (
-    <div className="carousel">
+    <div {...handlers} className="carousel">
       <button
         className="carousel__button previous-button"
         onClick={handlePrevious}
@@ -58,13 +78,16 @@ function Carousel({ animals, index, setIndex }) {
       <div className="carousel__contents-container">
         <ul
           className="carousel__contents"
-          style={{ left: `-${index * 40}vw`, transition: "left 0.3s ease-out" }}
+          style={{
+            left: `-${index * slideWidth}vw`,
+            transition: "left 0.3s ease-out",
+          }}
         >
           {animals.map((animal) => (
             <li
               key={animal.id}
               className="carousel__slide"
-              style={{ left: `${animal.id * 40}vw` }}
+              style={{ left: `${animal.id * slideWidth}vw` }}
             >
               <div className="animal-box">
                 <img
@@ -122,9 +145,11 @@ function Carousel({ animals, index, setIndex }) {
                       </p>
                     </div>
                   )}
-                  <button className="talk-button" onClick={handleTalk}>
-                    TALK
-                  </button>
+                  <div className="only-button-box">
+                    <button className="talk-button" onClick={handleTalk}>
+                      TALK
+                    </button>
+                  </div>
                 </div>
               </div>
             </li>
@@ -156,6 +181,7 @@ function Carousel({ animals, index, setIndex }) {
           ></button>
         ))}
       </div>
+
       <div></div>
       <h3>{`The ${language} ${animals[index].type}`}</h3>
     </div>

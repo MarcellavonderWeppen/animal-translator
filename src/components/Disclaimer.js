@@ -1,6 +1,6 @@
 function Disclaimer() {
   return (
-    <div style={{ alignSelf: "flex-end", marginRight: "5em" }}>
+    <div className="disclaimer-box">
       <div className="website-info info-box">
         <p>
           Find more inspiration about animal sounds around the world on

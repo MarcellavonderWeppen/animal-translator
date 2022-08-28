@@ -11,8 +11,14 @@ const LanguageChooser = ({ animals, index, setIndex }) => {
     setDisplayMenu(!displayMenu);
   };
 
+  let listItemUnit = "em";
+
+  if (window.innerWidth > 2000) {
+    listItemUnit = "vmax";
+  }
+
   return (
-    <div style={{ marginBottom: "20vh" }}>
+    <div className="language-chooser">
       <button id="button" onClick={handleClick} className="menu-button">
         Select a language
         <i className="fa fa-caret-down"></i>
@@ -27,7 +33,9 @@ const LanguageChooser = ({ animals, index, setIndex }) => {
           displayMenu === false
             ? { height: "0" }
             : {
-                height: `${animals[index].availableLanguages.length * 2.7}em`,
+                height: `${
+                  animals[index].availableLanguages.length * 2.7
+                }${listItemUnit}`,
                 transition: "height 1s ease, opacity 1s ease",
               }
         }
@@ -44,7 +52,11 @@ const LanguageChooser = ({ animals, index, setIndex }) => {
                 }}
               >
                 {" "}
-                <img src={getFlag(language)} alt="" className="menu-flag" />
+                <img
+                  src={getFlag(language)}
+                  alt="flag for language"
+                  className="menu-flag"
+                />
                 {`${language}`}
               </li>
             );

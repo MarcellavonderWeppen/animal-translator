@@ -28,7 +28,7 @@ body {
   border: 2px solid #aaa;
   border-radius: 50%;
   padding: 0.3em;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   align-self: flex-end;
   margin-right: 3em;
   box-shadow: 1px 1px 2px #aaa;
@@ -65,23 +65,33 @@ body {
 
 .dark-theme.no h2 {
   text-shadow: 1px 1px 3px lightgrey;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 /*** INTRO & OUTRO("no") ***/
 
-.intro.main-container {
+.main-container-intro {
+  width: 70vw;
+  max-width: 1000px;
+  margin-top: 2em;
+}
+
+.main-container-intro h1 {
+  margin-top: 0;
+}
+
+.main-container-intro {
   padding-bottom: 20vh;
 }
 
-.intro ul,
-.intro li,
-.intro p {
+.main-container-intro ul,
+.main-container-intro li,
+.main-container-intro p {
   color: #410374d3;
-  font-size: 1.1em;
+  font-size: 1.3rem;
 }
 
-.intro ul {
+.main-container-intro ul {
   width: 80%;
   text-align: center;
   margin-top: 0;
@@ -92,7 +102,13 @@ body {
   justify-content: space-around;
   align-items: flex-end;
   width: 50vw;
-  margin: 3em 0;
+  max-width: 85%;
+  margin: 3em 5% 3em 10%;
+}
+
+.intro-animal-container .pig {
+  width: 20vw;
+  max-width: 400px;
 }
 
 .intro-animal-box {
@@ -125,7 +141,7 @@ body {
 
 .intro-bubble-box p {
   font-family: "Architects Daughter", cursive;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   position: absolute;
   top: 25%;
@@ -134,15 +150,21 @@ body {
   text-transform: uppercase;
 }
 
-.intro li {
+.main-container-intro li {
   padding: 0.4em;
   list-style-type: none;
   line-height: 1.5;
 }
 
-.intro h4 {
+.main-container-intro h2 {
+  font-size: 3rem;
+}
+
+.main-container-intro h4 {
   margin-top: 2em;
-  font-size: 1.5em;
+  font-size: 2rem;
+  width: 80%;
+  max-width: 1000px;
   text-align: center;
 }
 
@@ -160,7 +182,7 @@ body {
   border-radius: 100px !important;
 }
 
-.intro a,
+.main-container-intro a,
 .no a {
   color: white;
   text-decoration: none;
@@ -172,17 +194,11 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  padding-bottom: 20vh;
+  padding: 3em;
+  padding-bottom: 10em;
 }
 
-.intro {
-  width: 70vw;
-  margin-top: 2em;
-}
-
-.intro h1 {
-  margin-top: 0;
-}
+/*** Outro "No" ***/
 
 .no {
   padding-bottom: 3em;
@@ -190,7 +206,8 @@ body {
 
 .no img {
   border: solid 4px pink;
-  height: 15vw;
+  min-width: 30vw;
+  max-width: 95vw;
   margin: 3em;
 }
 
@@ -198,10 +215,15 @@ body {
   margin: 1em;
 }
 
+.no .light-dark {
+  margin-top: 2em;
+  margin-right: 31vw;
+}
+
 /*** APP STYLING ***/
 
 h1 {
-  font-size: 4em;
+  font-size: 4rem;
   text-shadow: 2px 2px 4px blueviolet;
   margin-bottom: 0;
 }
@@ -213,7 +235,7 @@ h2 {
 
 h3 {
   text-shadow: 1px 1px 3px blueviolet;
-  font-size: 3em;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -230,7 +252,7 @@ h3,
 .carousel {
   display: grid;
   grid-template-columns: 5em 40vw 5em;
-  grid-template-rows: 40vh 3em;
+  grid-template-rows: 45vh 3em;
   align-items: center;
   grid-gap: 2em;
 }
@@ -275,7 +297,6 @@ h3,
   object-fit: cover;
   object-position: center center;
   padding: 2em;
-  padding-left: 1em;
 }
 
 .animal-img:hover {
@@ -284,6 +305,7 @@ h3,
 
 .bubble-and-button-box {
   height: 80%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -292,7 +314,7 @@ h3,
 }
 
 .bubble {
-  font-size: 1.5em;
+  height: 80%;
   text-transform: uppercase;
   font-weight: bold;
   transition: ease-in-out 1s;
@@ -306,21 +328,24 @@ h3,
 
 .bubble.talk {
   opacity: 1;
+  width: 80%;
   transition: ease-in-out 1s;
 }
 
 .bubble-img {
-  width: 200px;
+  width: 60%;
 }
 
 .bubble-text {
   position: absolute;
   margin-bottom: 2.5em;
+  font-size: 200%;
 }
 
 .talk-button {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   background-color: #e937c2;
+  max-height: 100%;
   color: white;
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
@@ -400,12 +425,16 @@ h3,
 
 /*** LANGUAGE CHOOSER ***/
 
+.language-chooser {
+  margin-bottom: 20vh;
+}
+
 .menu-button {
   margin-top: 1em;
   padding: 1em 2em;
   background-color: #f6f6f6;
   color: #410374d3;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   border: none;
   border-radius: 10px;
   box-shadow: 1px 1px 3px #d1b0c9;
@@ -421,12 +450,12 @@ h3,
   margin-top: 1em;
   color: #410374d3;
   background-color: #f6f6f6;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   /*   height: 0;
  */
   border-radius: 10px;
   box-shadow: 1px 1px 3px #d1b0c9;
-  overflow: hidden;
+  overflow: scroll;
   transition: height 0.1s ease, opacity 1s ease;
 }
 
@@ -463,11 +492,17 @@ h3,
 
 /*** DISCLAIMER ***/
 
+.disclaimer-box {
+  align-self: flex-end;
+  margin-right: 5em;
+  text-align: right;
+}
+
 .info-box {
   display: flex;
   margin: 2em 3em;
   justify-content: right;
-  font-size: 0.7em;
+  font-size: 0.7rem;
 }
 
 .info-box a {
@@ -488,4 +523,266 @@ h3,
 
 .flat-icon-info {
   margin-top: 1em;
+}
+
+/*** MEDIAQUERIES ***/
+
+/*** Very large screens: Mediaqueries min 2000px ***/
+
+@media (min-width: 2000px) {
+  .main-container-intro {
+    max-width: 60vw;
+  }
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 2vw !important;
+  }
+  h3 {
+    font-size: 2vw;
+  }
+  h4 {
+    font-size: 2vw !important;
+  }
+  li {
+    font-size: 1vw !important;
+  }
+  button {
+    font-size: 1vw !important;
+  }
+  .intro-animal-container {
+    margin: 5vh;
+  }
+  .intro-animal-container .pig {
+    max-width: 30vw;
+  }
+
+  .light-dark {
+    font-size: 2vw !important;
+    margin-right: 3vw;
+  }
+  .carousel {
+    grid-template-columns: 15em 40vw 5em;
+    grid-template-rows: 45vh 3em;
+    grid-gap: 5em;
+  }
+  .disclaimer-box {
+    margin-right: 2vw;
+  }
+}
+
+/*** Mediaqueries max 2000px ***/
+
+@media (max-width: 2000px) {
+  .bubble-text {
+    font-size: 180%;
+  }
+}
+
+@media (max-width: 2000px) {
+  .bubble-text {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 2000px) {
+  .no .light-dark {
+    margin-right: 10vw;
+  }
+}
+
+/*** Mediaqueries max 1200px ***/
+
+@media (max-width: 1200px) {
+  .carousel {
+    grid-template-columns: 5em 50vw 5em;
+    grid-template-rows: 45vh 3em;
+    grid-gap: 3em;
+  }
+
+  .main-container-intro {
+    width: 100%;
+    padding: 0;
+  }
+
+  .intro-light-dark {
+    margin-top: 2em;
+    margin-right: 2em;
+  }
+
+  .no .light-dark {
+    margin-right: 5vw;
+  }
+  .intro-animal-box-cat {
+    display: none;
+  }
+
+  .intro-animal-container {
+    margin: 0;
+  }
+
+  .intro-animal-box {
+    width: 80%;
+    padding: 0;
+    margin: 3em 0;
+  }
+  .intro-animal-container .pig {
+    width: 100%;
+  }
+}
+
+/*** Mediaqueries max 900px ***/
+@media (max-width: 900px) {
+  .carousel {
+    grid-template-columns: 5em 70vw 5em;
+    grid-template-rows: 45vh 3em;
+    grid-gap: 2em;
+  }
+
+  .intro-light-dark {
+    margin-top: 2em;
+    margin-right: 1.5em;
+  }
+
+  .intro-animal-box-cat {
+    display: none;
+  }
+
+  .intro-animal-container {
+    margin: 2em 0;
+  }
+
+  .intro-animal-box {
+    width: 100%;
+    padding: 0;
+    margin: 2em 0;
+  }
+  .intro-animal-container .pig {
+    width: 100%;
+  }
+}
+
+/*** Mediaqueries max 600px ***/
+
+@media (max-width: 600px) {
+  .carousel {
+    grid-template-columns: 2em 95vw 2em;
+    grid-template-rows: 45vh 3em 10em;
+    grid-gap: 2;
+  }
+
+  .carousel__button {
+    display: none;
+  }
+
+  .previous-button-mobile {
+  }
+
+  .carousel__slide .animal-img {
+    padding: 1em;
+    height: 55%;
+    max-width: 50%;
+    object-fit: contain;
+  }
+
+  .bubble-and-button-box {
+    height: 55%;
+  }
+
+  .talk-button {
+    font-size: 1.2rem;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 1em;
+  }
+
+  h2 {
+    margin: 1em;
+  }
+
+  .main-container-intro h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin: 1em;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    margin: 1em;
+  }
+
+  .light-dark {
+    margin-right: 1.5em;
+  }
+
+  .main-container-intro ul {
+    padding-left: 0;
+  }
+
+  .intro-button-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-button {
+    margin: 0 !important;
+    margin-bottom: 1em !important;
+  }
+
+  .intro-light-dark {
+    margin: 2em 1.5em 2em 0;
+  }
+
+  .intro-animal-box-cat {
+    display: none;
+  }
+
+  .intro-animal-container {
+    margin: 0;
+  }
+
+  .intro-animal-box {
+    width: 100%;
+    padding: 0;
+    margin: 2em 0;
+  }
+  .intro-animal-container .pig {
+    width: 100%;
+  }
+
+  .carousel {
+    margin-top: 2em;
+  }
+
+  .disclaimer-box {
+    align-self: flex-end;
+    margin-right: 1em;
+  }
+
+  .no img {
+    max-width: 80vw;
+  }
+
+  .intro-button {
+    max-width: 80vw; /* this is for the "intro" button in the outro */
+  }
+
+  .no .light-dark {
+    margin-right: 6vw;
+  }
+}
+/*** special mediaquerie for carousel max-height 555px ***/
+
+@media (max-height: 555px) {
+  .carousel {
+    grid-template-rows: 300px 3em;
+  }
 }

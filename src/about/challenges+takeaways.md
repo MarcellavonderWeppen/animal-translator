@@ -119,11 +119,12 @@ But first some little ...
 
 ## ... useful things I picked up:
 
-- [depcheck](https://www.npmjs.com/package/depcheck "npm depcheck") - a small handy package for a quick check on unused / missing dependencies - nice! 😎
+- Improving the file structure seemed important as it will help others (and my future self) to understand the app quicker
+- So let's learn how to clean up a project after using npx create-react-app
+- More cleaning: [depcheck](https://www.npmjs.com/package/depcheck "npm depcheck") - a small handy package for a quick check on unused / missing dependencies - nice! 😎
 - **window.scrollTo(0,0)** - this displays the new page from the top (like it should)
 - CSS variables (I heard about them - now they really make sense, regarding the Dark Theme)
 - What is [font-smoothing](https://szafranek.net/blog/2009/02/22/font-smoothing-explained/)?
-- How to clean up a project after using npx create-react-app
 - and ... Markdown!
 
 ## Markdown
@@ -266,15 +267,44 @@ So, my past self would be irritated, feel helpless and whine about cruel fate. B
 - But surely somebody else must have recognized this problem, too?
 - Search for "Markdown emoji" extension -> It works :sweat_smile:
 - One problem still remains - where do I find the emoji short codes, in case I can't guess them? -> here, [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/) to the rescue!
-- I probably "wasted" an insane amount of time, just to solve this little inconvenience with the the emojis. But that is the wrong way to look at it. As Kyle ("Web Dev Simplified") pointed out, developers are people who spend lots of time in order to spare many people lots of time and work. Now I know, how to solve the issue with the emojis. If some one else will have this issue in the future I can easily help. Also, I am training my skill to solve problems in the future. Every time I do this, I get faster and better.
-- Is installing an extension such a big deal? Of course not. But for my past self it would have been. All those tiny little baby steps :baby: add up to big progress in the end.
+- I probably "wasted" an insane amount of time, just to solve this little emoji inconvenience. But that is the wrong way to look at it. As Kyle ("Web Dev Simplified") pointed out, developers are people who spend lots of time in order to save many people lots of time. Now I know, how to solve the issue with the emojis. If some one else will have this issue in the future I can easily help. Also, I am training my skill to solve problems in the future. Every time I do this, I get faster and better.
+- Is installing an extension such a big deal? Of course not. But for my past self it would have been. All those tiny little baby steps :baby: add up to big progress in the long run.
 - Sorry, at the moment I am using emojis WAY to much :'D For now, we have to live with that. But I am pretty sure, the fascination with the new toy will normalize soon :smirk:
 
 Also, I am enjoying writing way to much at the moment. It's time to get some work done.
 
-[] push this version to GitHub<br>
-[] update on Netlify <br>
-[] promote it on LinkedIn <br>
+[x] push this version to GitHub<br>
+[x] update on Netlify <br>
+[x] promote it on LinkedIn <br>
 [] code a program to order pizza from my VSCode
 
 ... just kidding (regarding the pizza program), I am already quite hungry and will not make it before starvation.
+
+OMG :scream: I accidentally committed to early. I always knew the day would come, so it's time to do
+
+[x] ... my first soft reset
+
+Oh nice! Seems like Netlify is updating automatically.
+
+## Responsive Web Design
+
+Now, lets review Kevin Powells course on **responsive web design** and see, if we can improve the CSS of the Animal Translator.
+
+### July 20th 2022
+
+I completed the review. It was a good idea to split it in two parts:
+
+1. review the course & make notes on Obsidian
+2. implement insights on responsive design regarding the Animal Translator
+
+By this I got a good overview what's left to do. Also I have a nice list of changes to implement, a nice little to do list.
+
+So let's change those em's into rem's, when it comes to font size. I first cautiously changed some font sizes and tested each carefully for different device sizes. Then I got bored and changed all of them at once, trusting that I would be able to deal with unexpected effects. Very much to my surprise nothing changed at all. I guess I could be a little less thorough and more bold sometimes. And Kevin Powell seems to exaggerate the importance of using rems for font sizes. Anyway, I will remember doing this as a best practice.
+
+Next step - I was going for the line length for readability. I expected that to be a short task, but there was some research to do, some experimenting...
+
+It seems the perfect line shouldn't be longer than 75 characters. If it's longer than that, readers will lose their focus (scientifically approved). After adding max-width and increasing the font for the paragraphs, I now have slightly more. I decided, that's ok, since we are not talking about big text blocks here and the font-size is quite large. Really makes a difference!
+
+### Challenge: Making a carousel responsive
+
+This carousel is really tough! It took me quite a while to realize that the height was coming from the `grid-template-row: 45vh 3em`! Handling this with a fixed height for small heights.
