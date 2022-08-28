@@ -58,7 +58,7 @@ function Carousel({ animals, index, setIndex }) {
   }
 
   if (window.innerWidth < 600) {
-    slideWidth = 95;
+    slideWidth = 80;
   }
 
   const handlers = useSwipeable({

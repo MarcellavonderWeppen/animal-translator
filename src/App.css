@@ -667,16 +667,13 @@ h3,
 
 @media (max-width: 600px) {
   .carousel {
-    grid-template-columns: 2em 95vw 2em;
+    grid-template-columns: 0em 80vw 0em;
     grid-template-rows: 45vh 3em 10em;
-    grid-gap: 2;
+    grid-gap: 2em;
   }
 
   .carousel__button {
     display: none;
-  }
-
-  .previous-button-mobile {
   }
 
   .carousel__slide .animal-img {
