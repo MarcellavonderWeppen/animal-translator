@@ -667,7 +667,7 @@ h3,
 
 @media (max-width: 600px) {
   .carousel {
-    grid-template-columns: 0em 80vw 0em;
+    grid-template-columns: 0em 75vw 0em;
     grid-template-rows: 45vh 3em 10em;
     grid-gap: 2em;
   }
