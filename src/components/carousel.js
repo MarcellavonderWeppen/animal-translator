@@ -68,7 +68,7 @@ function Carousel({ animals, index, setIndex }) {
   });
 
   if (window.innerWidth < 600) {
-    disableBodyScroll(this.targetElement);
+    disableBodyScroll(document);
   }
 
   return (
