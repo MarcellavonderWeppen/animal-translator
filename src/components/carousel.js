@@ -67,9 +67,9 @@ function Carousel({ animals, index, setIndex }) {
     onSwipedRight: () => setIndex(index - 1),
   });
 
-  if (window.innerWidth < 600) {
+  /*  if (window.innerWidth < 600) {
     disableBodyScroll(document);
-  }
+  } */
 
   return (
     <div {...handlers} className="carousel">

@@ -691,6 +691,15 @@ h3,
     font-size: 1.2rem;
   }
 
+  .carousel__dot {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .carousel__dot + .carousel__dot {
+    margin-left: 1.3em;
+  }
+
   .main-container {
     padding: 0;
   }
