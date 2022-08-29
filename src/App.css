@@ -577,6 +577,10 @@ h3,
   .bubble-text-talk {
     font-size: 1.2vw;
   }
+  .bubble-text-touch {
+    margin-bottom: 4em;
+    font-size: 1.2vw;
+  }
 }
 
 /*** Mediaqueries max 2000px ***/
@@ -590,6 +594,10 @@ h3,
   }
   .bubble-text-talk {
     font-size: 1.5vw;
+  }
+  .bubble-text-touch {
+    margin-bottom: 4em;
+    font-size: 1.3vw;
   }
 }
 
@@ -635,6 +643,13 @@ h3,
   .intro-sound {
     font-size: 2vw !important;
   }
+  .bubble-text-touch {
+    font-size: 2.5vw;
+  }
+  .bubble-text-touch {
+    margin-bottom: 4em;
+    font-size: 1.5vw;
+  }
 }
 
 /*** Mediaqueries max 900px ***/
@@ -674,6 +689,11 @@ h3,
   }
   .only-button-box {
     margin-right: 1em;
+  }
+
+  .bubble-text-touch {
+    margin-bottom: 3em;
+    font-size: 2.5vw;
   }
 }
 
@@ -804,9 +824,13 @@ h3,
   }
 
   .bubble-text-talk {
-    padding-top: 3px;
     font-size: 6vw;
   }
+
+  .bubble-text-touch {
+    font-size: 4.5vw;
+  }
+
   .talk .bubble-img {
     opacity: 0;
   }

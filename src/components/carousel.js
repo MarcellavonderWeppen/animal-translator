@@ -44,6 +44,7 @@ function Carousel({ animals, index, setIndex }) {
     }
     setTouch(true);
   };
+
   const handleMouseOut = function () {
     setTouch(false);
   };
@@ -139,7 +140,7 @@ function Carousel({ animals, index, setIndex }) {
                         src={speechBubble}
                         alt="speech bubble"
                         className="bubble-img"
-                        style={{ transform: "scale(1.2)" }}
+                        style={{ transform: "scale(2)" }}
                       />
                       <p
                         className="bubble-text bubble-text-touch"
