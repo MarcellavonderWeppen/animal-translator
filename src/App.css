@@ -760,8 +760,9 @@ h3,
     margin: 1em;
   }
 
+  button,
   button:focus {
-    outline: none;
+    outline-color: transparent !important;
   }
 
   .light-dark {
