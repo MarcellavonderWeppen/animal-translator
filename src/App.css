@@ -760,6 +760,10 @@ h3,
     margin: 1em;
   }
 
+  button {
+    outline: none;
+  }
+
   .light-dark {
     margin-right: 1.5em;
   }
