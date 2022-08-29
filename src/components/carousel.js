@@ -1,16 +1,27 @@
 import React, { useContext, useState } from "react";
-import { useSwipeable } from "react-swipeable";
-import { disableBodyScroll } from "body-scroll-lock";
+//import { useSwipeable } from "react-swipeable";
+//import { disableBodyScroll } from "body-scroll-lock";
 import speechBubble from "../images/speech-bubble.png";
 import LanguageContext from "../contexts/LanguageContext";
 
 function Carousel({ animals, index, setIndex }) {
+  let animalAudio = animals[index].audioSound;
+  let audio = new Audio(animalAudio);
+
+  const start = () => {
+    audio.play();
+    setTimeout(() => {
+      audio.pause();
+    }, 3000);
+  };
+
   const [talk, setTalk] = useState(false);
   const [touch, setTouch] = useState(false);
   const [language, setLanguage] = useContext(LanguageContext);
 
   const handleTalk = function () {
     setTalk(true);
+    start();
     setTimeout(() => {
       setTalk(false);
     }, 1500);
@@ -42,6 +53,7 @@ function Carousel({ animals, index, setIndex }) {
     if (e.target.alt === "bee") {
       alert(`Don't touch Little Bee! She might get scared and sting.`);
     }
+    start();
     setTouch(true);
   };
 
@@ -63,17 +75,18 @@ function Carousel({ animals, index, setIndex }) {
     slideWidth = 75;
   }
 
-  const handlers = useSwipeable({
+  /*   const handlers = useSwipeable({
     onSwipedLeft: () => setIndex(index + 1),
     onSwipedRight: () => setIndex(index - 1),
-  });
+  }); */
 
   /*  if (window.innerWidth < 600) {
     disableBodyScroll(document);
   } */
+  //if you use disableBodyScroll, place {...handlers} in .carousel div tag!
 
   return (
-    <div {...handlers} className="carousel">
+    <div className="carousel">
       <button
         className="carousel__button previous-button"
         onClick={handlePrevious}

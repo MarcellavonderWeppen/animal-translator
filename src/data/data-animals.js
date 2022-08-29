@@ -25,6 +25,7 @@ const animals = [
       Japanese: "Nyan",
       Korean: "Yaong",
     },
+    audioSound: "/sounds/Sound-of-cat-meowing.mp3",
     availableLanguages: [
       "English",
       "Spanish",
@@ -53,6 +54,7 @@ const animals = [
       Japanese: "Wan",
       Chinese: "Wang", //Cantonese
     },
+    audioSound: "/sounds/large-dog-bark-once-sound-effect.mp3",
     availableLanguages: [
       "English",
       "Spanish",
@@ -79,6 +81,7 @@ const animals = [
       Albanian: "Hunk",
       Japanese: "Buu",
     },
+    audioSound: "/sounds/pig-sound-effect.mp3",
     availableLanguages: [
       "English",
       "German",
@@ -103,6 +106,7 @@ const animals = [
       Russian: "I-go-go",
       Japanese: "Hihiin",
     },
+    audioSound: "/sounds/horse-neigh-sound-effect.mp3",
     availableLanguages: [
       "English",
       "Danish",
@@ -128,6 +132,7 @@ const animals = [
       Korean: "Jjik",
       Chinese: "Zi", //Mandarin
     },
+    audioSound: "/sounds/mouse-squeaking-noise.mp3",
     availableLanguages: [
       "English",
       "Italian",
@@ -153,6 +158,7 @@ const animals = [
       Estonian: "Prääks",
       Turkish: "Vak",
     },
+    audioSound: "/sounds/Duck-quack.mp3",
     availableLanguages: [
       "English",
       "French",
@@ -180,6 +186,7 @@ const animals = [
       Korean: "Gae-Gool",
       Chinese: "Guo Guo",
     },
+    audioSound: "/sounds/frog-noises.mp3",
     availableLanguages: [
       "English",
       "Italian",
@@ -205,6 +212,7 @@ const animals = [
       Japanese: "Kok-E-Kok-Ko",
       Korean: "Ko-Ko-Oh",
     },
+    audioSound: "/sounds/cockerel-crowing-sound.mp3",
     availableLanguages: ["English", "French", "Spanish", "Japanese", "Korean"],
   },
   {
@@ -219,6 +227,7 @@ const animals = [
       Japanese: "Bun",
       Korean: "Boong",
     },
+    audioSound: "/sounds/bumblebee-sound.mp3",
     availableLanguages: ["English", "German", "Turkish", "Japanese", "Korean"],
   },
   {
@@ -237,6 +246,7 @@ const animals = [
       Turkish: "Jick-Jick",
       Japanese: "Chun-Chun",
     },
+    audioSound: "sounds/birds-song-in-forest.mp3",
     availableLanguages: [
       "English",
       "French",

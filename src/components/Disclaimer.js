@@ -9,7 +9,14 @@ function Disclaimer() {
           </a>
         </p>
       </div>
-
+      <div className="website-info info-box">
+        <p>
+          I found all animal audio sounds at
+          <a href="https://www.freesoundslibrary.com">
+            www.freesoundslibrary.com
+          </a>
+        </p>
+      </div>
       <div className="flat-icon-info info-box">
         <div>
           <p>

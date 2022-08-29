@@ -494,13 +494,12 @@ h3,
 
 .disclaimer-box {
   align-self: flex-end;
-  margin-right: 5em;
+  margin: 2em 8em 0 0;
   text-align: right;
 }
 
 .info-box {
   display: flex;
-  margin: 2em 3em;
   justify-content: right;
   font-size: 0.7rem;
 }
@@ -518,11 +517,7 @@ h3,
 }
 
 .website-info {
-  margin-bottom: 1em;
-}
-
-.flat-icon-info {
-  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 /*** MEDIAQUERIES ***/
@@ -704,6 +699,7 @@ h3,
     grid-template-columns: 0em 75vw 0em;
     grid-template-rows: 45vh 3em 10em;
     grid-gap: 2em;
+    margin-top: 2em;
   }
 
   .carousel__button {
@@ -807,13 +803,9 @@ h3,
     font-size: 3vw !important;
   }
 
-  .carousel {
-    margin-top: 2em;
-  }
-
   .disclaimer-box {
     align-self: flex-end;
-    margin-right: 1em;
+    margin: 2em 3em 2em 2em;
   }
 
   .no img {
