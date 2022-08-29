@@ -8,7 +8,12 @@ import Disclaimer from "../components/Disclaimer";
 
 import LanguageContext from "../contexts/LanguageContext";
 
+import { disableBodyScroll } from "body-scroll-lock";
+
 function App() {
+  if (window.innerWidth < 600) {
+    disableBodyScroll(document);
+  }
   if (window.innerWidth > 600) {
     window.scrollTo(0, 0);
   }
