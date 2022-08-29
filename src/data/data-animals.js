@@ -5,7 +5,7 @@ import horse from "../images/cartoon-horse.png";
 import mouse from "../images/cartoon-mouse.png";
 import duck from "../images/cartoon-duck-1.png";
 import frog from "../images/cartoon-frog-1.png";
-import cockerel from "../images/cartoon-cockerel.png";
+//import cockerel from "../images/cartoon-cockerel.png";
 import bee from "../images/cartoon-bee.png";
 import bird from "../images/cartoon-bird.png";
 
@@ -200,23 +200,9 @@ const animals = [
       "Chinese",
     ],
   },
+
   {
     id: 7,
-    type: "cockerel",
-    img: cockerel,
-    nickname: "Mr Cockerel",
-    sounds: {
-      English: "Cock-A-Doodle-Doo",
-      French: "Cocorico",
-      Spanish: "Kikiriki",
-      Japanese: "Kok-E-Kok-Ko",
-      Korean: "Ko-Ko-Oh",
-    },
-    audioSound: "/sounds/cockerel-crowing-sound.mp3",
-    availableLanguages: ["English", "French", "Spanish", "Japanese", "Korean"],
-  },
-  {
-    id: 8,
     type: "bee",
     img: bee,
     nickname: "Little Bee",
@@ -231,7 +217,7 @@ const animals = [
     availableLanguages: ["English", "German", "Turkish", "Japanese", "Korean"],
   },
   {
-    id: 9,
+    id: 8,
     type: "bird",
     img: bird,
     nickname: "Birdie",
@@ -260,6 +246,24 @@ const animals = [
     ],
   },
 ];
+
+// Fix font-size for cockerel first
+
+/* {
+  id: 7,
+  type: "cockerel",
+  img: cockerel,
+  nickname: "Mr Cockerel",
+  sounds: {
+    English: "Cock-A-Doodle-Doo",
+    French: "Cocorico",
+    Spanish: "Kikiriki",
+    Japanese: "Kok-E-Kok-Ko",
+    Korean: "Ko-Ko-Oh",
+  },
+  audioSound: "/sounds/cockerel-crowing-sound.mp3",
+  availableLanguages: ["English", "French", "Spanish", "Japanese", "Korean"],
+}, */
 
 const getAnimals = function () {
   return animals;
