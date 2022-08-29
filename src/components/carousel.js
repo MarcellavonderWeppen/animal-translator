@@ -111,7 +111,7 @@ function Carousel({ animals, index, setIndex }) {
                         alt="speech bubble"
                         className="bubble-img"
                       />
-                      <p className="bubble-text">
+                      <p className="bubble-text bubble-text-talk">
                         {animals[index].sounds[language]} !
                       </p>
                     </div>
@@ -125,7 +125,7 @@ function Carousel({ animals, index, setIndex }) {
                         style={{ transform: "scale(1.2)" }}
                       />
                       <p
-                        className="bubble-text"
+                        className="bubble-text bubble-text-talk"
                         style={{ transform: "scale(0.8)" }}
                       >
                         {animals[index].sounds[language]} !
@@ -142,7 +142,7 @@ function Carousel({ animals, index, setIndex }) {
                         style={{ transform: "scale(1.2)" }}
                       />
                       <p
-                        className="bubble-text"
+                        className="bubble-text bubble-text-touch"
                         style={{ transform: "scale(0.7)" }}
                       >
                         {animals[index].sounds[language]} ! {animal.nickname}{" "}

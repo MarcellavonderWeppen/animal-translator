@@ -558,6 +558,10 @@ h3,
     max-width: 30vw;
   }
 
+  .intro-sound {
+    font-size: 1vw !important;
+  }
+
   .light-dark {
     font-size: 2vw !important;
     margin-right: 3vw;
@@ -570,25 +574,22 @@ h3,
   .disclaimer-box {
     margin-right: 2vw;
   }
+  .bubble-text-talk {
+    font-size: 1.2vw;
+  }
 }
 
 /*** Mediaqueries max 2000px ***/
 
 @media (max-width: 2000px) {
-  .bubble-text {
-    font-size: 180%;
+  .intro-sound {
+    font-size: 1.2vw !important;
   }
-}
-
-@media (max-width: 2000px) {
-  .bubble-text {
-    font-size: 100%;
-  }
-}
-
-@media (max-width: 2000px) {
   .no .light-dark {
     margin-right: 10vw;
+  }
+  .bubble-text-talk {
+    font-size: 1.5vw;
   }
 }
 
@@ -630,6 +631,10 @@ h3,
   .intro-animal-container .pig {
     width: 100%;
   }
+
+  .intro-sound {
+    font-size: 2vw !important;
+  }
 }
 
 /*** Mediaqueries max 900px ***/
@@ -660,6 +665,12 @@ h3,
   }
   .intro-animal-container .pig {
     width: 100%;
+  }
+  .intro-sound {
+    font-size: 3vw !important;
+  }
+  .bubble-text-talk {
+    font-size: 2vw;
   }
 }
 
@@ -705,11 +716,11 @@ h3,
   }
   h1 {
     font-size: 3rem;
-    margin: 1em;
+    margin: 1.5em;
   }
 
   h2 {
-    margin: 1em;
+    margin: 1.5em;
   }
 
   .main-container-intro h2 {
@@ -764,6 +775,10 @@ h3,
     width: 100%;
   }
 
+  .intro-sound {
+    font-size: 3vw !important;
+  }
+
   .carousel {
     margin-top: 2em;
   }
@@ -783,6 +798,11 @@ h3,
 
   .no .light-dark {
     margin-right: 6vw;
+  }
+
+  .bubble-text-talk {
+    padding-top: 3px;
+    font-size: 2.7vw;
   }
 }
 /*** special mediaquerie for carousel max-height 555px ***/
