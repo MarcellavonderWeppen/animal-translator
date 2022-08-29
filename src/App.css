@@ -672,6 +672,9 @@ h3,
   .bubble-text-talk {
     font-size: 2vw;
   }
+  .only-button-box {
+    margin-right: 1em;
+  }
 }
 
 /*** Mediaqueries max 600px ***/
@@ -802,7 +805,10 @@ h3,
 
   .bubble-text-talk {
     padding-top: 3px;
-    font-size: 2.7vw;
+    font-size: 6vw;
+  }
+  .talk .bubble-img {
+    opacity: 0;
   }
 }
 /*** special mediaquerie for carousel max-height 555px ***/
