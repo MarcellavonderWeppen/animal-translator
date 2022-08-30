@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useSwipeable } from "react-swipeable";
-import { disableBodyScroll } from "body-scroll-lock";
+//import { disableBodyScroll } from "body-scroll-lock";
 import speechBubble from "../images/speech-bubble.png";
 import LanguageContext from "../contexts/LanguageContext";
 
@@ -80,9 +80,9 @@ function Carousel({ animals, index, setIndex }) {
     onSwipedRight: () => setIndex(index - 1),
   });
 
-  if (window.innerWidth < 600) {
+  /*  if (window.innerWidth < 600) {
     disableBodyScroll(document);
-  }
+  } */
 
   return (
     <div {...handlers} className="carousel">

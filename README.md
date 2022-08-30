@@ -1,5 +1,7 @@
 # :cat: Animal-Translator
 
+**Published on** https://tranquil-malasada-6cece9.netlify.app/
+
 ## A project about intercultural animal-competence, build in React
 
 When it was time to build our first React project on our own, our teacher gave us good advice: "Just think about a problem people might have, then build an app that solves that problem."
@@ -24,13 +26,13 @@ The way we interpret animal sounds might differ, but we all DO interpret them.
 
 This project is a playful contribution to the appreciation of cultural diversity - without the need to lecture or patronize.
 
-So have fun with the Animal Translator and let me know what you think about it -> marcellaberlin[at]posteo.de or Marcella von der Weppen at Linkedin
+So have fun with the Animal Translator and let me know what you think about it -> marcellaberlin[at]posteo.de or Marcella von der Weppen at Linkedin.
 
-In the "about" folder you can get to know:
+In the "about" folder you can:
 
-- more about my takeaways from this project (src > about > challenges+takeaways.md)
-- and also which improvements I am still going to make (src > about > to-do.md), as this is a work in progress.
+- read more about my takeaways from this project in my personal coder's diary (src > about > challenges+takeaways.md)
+- get to know which improvements I am still going to make (src > about > to-do.md), as this is a work in progress.
 
-Please keep in mind that this project is not responsive yet - this is going to come soon. So don't look at it on your mobile, unless you want a horrible User Experience.
+This project is somewhat responsive (with some improvements yet to come).
 
-This project was built in **100% Vanilla CSS** and **React**.
+It was built in **100% Vanilla CSS** and **React**.
