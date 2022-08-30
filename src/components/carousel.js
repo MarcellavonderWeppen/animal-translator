@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { useSwipeable } from "react-swipeable";
-//import { disableBodyScroll } from "body-scroll-lock";
 import speechBubble from "../images/speech-bubble.png";
 import LanguageContext from "../contexts/LanguageContext";
 
@@ -75,14 +74,16 @@ function Carousel({ animals, index, setIndex }) {
     slideWidth = 75;
   }
 
-  const handlers = useSwipeable(animals, {
-    onSwipedLeft: (animals) => {
-      if (index === animals.length - 1) {
-        return setIndex(animals.length - 1);
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      if (index === 8) {
+        return setIndex(8);
       } else {
         return setIndex(index + 1);
       }
     },
+    //console.log(animals.length - 1);
+    //setIndex(8): not good to have the value hardcoded here. Not sure, why passing in (animals.length -1)  didn't work here. Come back and make it work later.
     onSwipedRight: () => {
       if (index === 0) {
         return setIndex(0);
@@ -92,10 +93,6 @@ function Carousel({ animals, index, setIndex }) {
     },
   });
 
-  /*  if (window.innerWidth < 600) {
-    disableBodyScroll(document);
-  } */
-  console.log(animals.length - 1);
   return (
     <div {...handlers} className="carousel">
       <button
