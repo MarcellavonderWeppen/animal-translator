@@ -77,8 +77,8 @@ function Carousel({ animals, index, setIndex }) {
 
   const handlers = useSwipeable({
     onSwipedLeft: () => {
-      if (index === animals.length - 1) {
-        return setIndex(animals.length - 1);
+      if (index === 8) {
+        return setIndex(8);
       } else {
         return setIndex(index + 1);
       }
@@ -95,7 +95,7 @@ function Carousel({ animals, index, setIndex }) {
   /*  if (window.innerWidth < 600) {
     disableBodyScroll(document);
   } */
-
+  console.log(animals.length);
   return (
     <div {...handlers} className="carousel">
       <button
