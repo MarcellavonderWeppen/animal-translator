@@ -317,7 +317,7 @@ In the mean time...
 
 - I was away on vacation. No coding, but I took a course about SASS on LinkedIn Learning. Now I feel I closed this gap in my understanding. Also I decided, that I don't need SASS for this project - it wouldn't bring along any improvements, at least nothing obvious.
 - Speaking about LinkedIn Learning, as I was on the free trial month, I felt the pressure to use it. So I took some more courses: Shopify, Hugo, Markdown and WebFlow.
-- After holidays I got the flue - it took me some time to recover.
+- After my holidays I got the flue - it took me some time to recover.
 - Regarding the backend module at school, I thought we would get some days to code our own personal project like we did for the other modules. But we didn't. I really wanted to code a Markdown Blog as my personal backend project, so that's what I did in the evenings and weekends.
 - Also, I got a fine offer for an internship. I really would like to embrace this opportunity. I already passed the first interview, so now I should prepare for the tech interviews, I guess!
 - Also, the final project with my class started. I am in the best team ever, working on the coolest project ever. So, I want to give my 100% for that as well.
@@ -325,7 +325,7 @@ In the mean time...
 
 With so much going on, no wonder I didn't find more time for my cute little Animal Translator! Tomorrow it's time to hand the project in, if I want to take part in the W3 competition.
 
-I am a bit sad, that I couldn't implement all the ideas and improvements that were on my mind in a timely manner. Still there is so much to do. I doubt, that I will win anything with the project as it is now. But on the other hand, it's the taking part that counts.
+I am a bit sad, that I couldn't implement all the ideas and improvements that were on my mind in a timely manner. Still there is so much to do. I doubt, that I will win anything with the project as it is now. But on the other hand, it's taking part that counts.
 
 At least I got the project responsive yesterday. That was quite a pile of work - more than expected. Today, I figured out how to add some real animal sounds. That was fun :smile: And as usual, I learned a lot on the go.
 

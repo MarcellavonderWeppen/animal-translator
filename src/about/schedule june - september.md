@@ -1,6 +1,6 @@
 # JUNE
 
-Main take-away from building this schedule: never EVER build your schedule on Markdown again. Why on earth should a person endowed with reason do that?
+Main take-away from building this schedule: never EVER build your schedule on Markdown again. Why on earth should a person endowed with reason do that? Don't. Just don't.
 
 ## Backend + Portfolio (course, design + text, Figma)
 

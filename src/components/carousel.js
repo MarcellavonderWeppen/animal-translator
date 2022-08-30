@@ -76,8 +76,18 @@ function Carousel({ animals, index, setIndex }) {
   }
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => setIndex(index + 1),
-    onSwipedRight: () => setIndex(index - 1),
+    onSwipedLeft: () => {
+      if (index === 0) {
+        return setIndex(0);
+      }
+      return setIndex(index + 1);
+    },
+    onSwipedRight: () => {
+      if (index === 9) {
+        return setIndex(9);
+      }
+      return setIndex(index - 1);
+    },
   });
 
   /*  if (window.innerWidth < 600) {
