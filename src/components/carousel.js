@@ -76,9 +76,9 @@ function Carousel({ animals, index, setIndex }) {
   }
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => {
-      if (index === 8) {
-        return setIndex(8);
+    onSwipedLeft: (animals) => {
+      if (index === animals.length - 1) {
+        return setIndex(animals.length - 1);
       } else {
         return setIndex(index + 1);
       }
